@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v5
 
       - name: Terraform Module Releaser
-        uses: techpivot/terraform-module-releaser@v1.7.1
+        uses: techpivot/terraform-module-releaser@v1
         with:
           major-keywords: major,major update,breaking change
           minor-keywords: feat,feature
